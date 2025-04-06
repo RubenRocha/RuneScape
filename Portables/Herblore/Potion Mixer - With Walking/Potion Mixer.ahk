@@ -5,7 +5,7 @@ SetBatchLines, -1
 DetectHiddenWindows, On
 closeotherllars()
 
-if (InStr(A_ScriptDir, ".zip" or ".rar") > 0) {
+if (InStr(A_ScriptDir, ".zip") || InStr(A_ScriptDir, ".rar")) {
 	Menu, Tray, NoIcon
 	Gui Error: +LastFound +OwnDialogs +AlwaysOnTop
 	Gui Error: Font, S13 bold underline cRed
